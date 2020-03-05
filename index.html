@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids</title>
+    <style class="wrapper">
+        /* Working with the grids */
+        .wrapper {
+            /* This grid setup */
+            display: grid;
+            grid-template-columns: 70% 30%;
+            /* grid-column-gap: 1em;
+            grid-row-gap: 1em; */
+
+            grid-gap: 1em;
+        }
+
+
+        /* All <div> classes in wrapper */
+        .wrapper > div {
+            background: #eee;
+            padding: 1em;
+        }
+        /* Every other <div> has a different shade of grey, every odd element  */
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nobis ullam quidem officia blanditiis officiis, cumque dolores sunt dolorum debitis est facilis modi, eos perspiciatis consequatur corrupti reprehenderit veritatis numquam nisi fugit voluptatum nostrum saepe. Beatae tenetur nulla sequi ut rerum aliquid voluptatem aliquam quo ratione, provident impedit assumenda, sed doloremque blanditiis fugiat, esse illo. Necessitatibus quod consectetur nesciunt, perferendis facere ipsa quos quis quisquam atque, minus deserunt maiores voluptate, ipsum in recusandae aliquid. Repudiandae nulla aperiam blanditiis rerum nemo.
+        </div>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam atque maxime ratione assumenda ipsa unde impedit, debitis reiciendis, quasi, rem fugiat? Veritatis reprehenderit dolores minima sapiente, debitis optio ab dolorem.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nobis ullam quidem officia blanditiis officiis, cumque dolores sunt dolorum debitis est facilis modi, eos perspiciatis consequatur corrupti reprehenderit veritatis numquam nisi fugit voluptatum nostrum saepe. Beatae tenetur nulla sequi ut rerum aliquid voluptatem aliquam quo ratione, provident impedit assumenda, sed doloremque blanditiis fugiat, esse illo. Necessitatibus quod consectetur nesciunt, perferendis facere ipsa quos quis quisquam atque, minus deserunt maiores voluptate, ipsum in recusandae aliquid. Repudiandae nulla aperiam blanditiis rerum nemo.
+        </div>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam atque maxime ratione assumenda ipsa unde impedit, debitis reiciendis, quasi, rem fugiat? Veritatis reprehenderit dolores minima sapiente, debitis optio ab dolorem.
+        </div>
+    </div>
+    
+</body>
+</html>
